@@ -1,4 +1,4 @@
-# Restaurant
+# Calculator
 
 > This project is a calculator, with the basic operations.
 
