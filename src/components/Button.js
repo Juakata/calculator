@@ -14,8 +14,13 @@ const Button = props => {
   );
 };
 
+
 Button.propTypes = {
-  object: PropTypes.object,
+  object: PropTypes.objectOf(
+    PropTypes.number,
+    PropTypes.string,
+  ).isRequired,
 };
+
 
 export default Button;
