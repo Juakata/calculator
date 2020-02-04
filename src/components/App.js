@@ -6,7 +6,7 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      result: 0,
+      result: '0',
     };
   }
 
@@ -14,7 +14,7 @@ export default class App extends React.Component {
     const { result } = this.state;
     return (
       <div id="container">
-        <Display result={result} />
+        <Display value={result} />
         <ButtonPanel />
       </div>
     );
