@@ -1,21 +1,7 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
+import React from 'react';
 import './index.css';
+import App from './components/App';
 
-class Main extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      welcome: 'Hello World!',
-    };
-  }
 
-  render() {
-    const { welcome } = this.state;
-    return (
-      <h1>{ welcome }</h1>
-    );
-  }
-}
-
-ReactDOM.render(<Main />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
