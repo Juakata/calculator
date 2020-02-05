@@ -1,6 +1,7 @@
 import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
+import calculate from '../logic/calculate';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -8,6 +9,12 @@ export default class App extends React.Component {
     this.state = {
       result: '0',
     };
+  }
+
+  updateResult(data, name) {
+    this.setState({
+      result: calculate(data, name),
+    });
   }
 
   render() {
