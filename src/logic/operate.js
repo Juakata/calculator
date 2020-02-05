@@ -15,6 +15,9 @@ const operate = (n1, n2, operation) => {
       result = x.times(y);
       break;
     case '/':
+      if (y === 0) {
+        return 'Math Error';
+      }
       result = x.div(y);
       break;
     case '%':
