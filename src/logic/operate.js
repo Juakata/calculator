@@ -1,19 +1,21 @@
-import Big from 'big.js';
+import Big from 'big-js';
 
 const operate = (n1, n2, operation) => {
   let result = new Big(0);
+  const x = new Big(n1);
+  const y = new Big(n2);
   switch (operation) {
     case '+':
-      result = n1 + n2;
+      result = x.plus(y);
       break;
     case '-':
-      result = n1 - n2;
+      result = x.minus(y);
       break;
     case '*':
-      result = n1 * n2;
+      result = x.times(y);
       break;
     case '/':
-      result = n1 / n2;
+      result = x.div(y);
       break;
     case '%':
       result = n1 % n2;
