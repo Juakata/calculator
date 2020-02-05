@@ -5,10 +5,6 @@
   box-shadow: 0 0 10px grey;
 }
 
-#zero {
-  grid-column: span 2;
-}
-
 .result {
   background: grey;
   color: white;
@@ -22,18 +18,24 @@
   margin: 0;
 }
 
-.grid-4 {
-  display: grid;
-  margin: 0;
-  grid-template-columns: repeat(4, 1fr);
+.panel div {
+  display: flex;
 }
 
-.operator {
-  background: orange;
+.grey, .orange {
   font-size: 25px;
-}
-
-.normal, #zero{
   height: 100px;
-  font-size: 25px;
+  width: 25%;
+}
+
+.zero {
+  width: 50%;
+}
+
+.grey {
+  background: #e8e8e8;
+}
+
+.orange {
+  background: orange;
 }
