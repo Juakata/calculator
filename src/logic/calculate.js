@@ -2,10 +2,10 @@ import operate from './operate';
 
 const calculate = (data, name) => {
   let result;
-
+  const { total, next, operation } = data;
   switch (name) {
     case '+/-':
-      result = data[0] * (-1);
+      result = total * (-1);
       break;
     case '.':
       result = '.';
@@ -14,7 +14,7 @@ const calculate = (data, name) => {
       result = '';
       break;
     case '=':
-      result = operate(data[0], data[1], data[2]);
+      result = operate(total, next, operation);
       break;
     default:
   }

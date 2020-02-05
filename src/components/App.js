@@ -18,6 +18,7 @@ export default class App extends React.Component {
   }
 
   render() {
+    console.log(calculate({ total: 2, next: 2, operation: '' }, '+/-'));
     const { result } = this.state;
     return (
       <div id="container">
