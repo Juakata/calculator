@@ -2,16 +2,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Display = props => {
-  const { value } = props;
+  let { result } = props;
+  result = result || '0';
   return (
     <div className="result">
-      <h2>{ value }</h2>
+      <h2>{ result }</h2>
     </div>
   );
 };
 
 Display.propTypes = {
-  value: PropTypes.string.isRequired,
+  result: PropTypes.string,
+};
+
+Display.defaultProps = {
+  result: 0,
 };
 
 export default Display;

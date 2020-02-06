@@ -4,6 +4,7 @@ const operate = (n1, n2, operation) => {
   let result = new Big(0);
   const x = new Big(n1);
   const y = new Big(n2);
+
   switch (operation) {
     case '+':
       result = x.plus(y);
@@ -11,10 +12,10 @@ const operate = (n1, n2, operation) => {
     case '-':
       result = x.minus(y);
       break;
-    case '*':
+    case 'x':
       result = x.times(y);
       break;
-    case '/':
+    case '÷':
       if (y === 0) {
         return 'Math Error';
       }
