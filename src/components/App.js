@@ -8,17 +8,14 @@ export default class App extends React.Component {
     super(props);
     this.state = {
       total: '',
-      next: null,
-      operation: null,
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(buttonName) {
-    const result = calculate(this.state, buttonName);
-    this.setState({
-      total: result,
-    });
+    this.setState(state => ({
+      total: calculate(state, buttonName),
+    }));
   }
 
   render() {
