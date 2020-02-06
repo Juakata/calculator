@@ -2,6 +2,9 @@
 
 > This project is a calculator, with the basic operations.
 
+![calculator](https://user-images.githubusercontent.com/11781597/73986379-17212880-4903-11ea-989e-55274582c228.png)
+
+
 ## Built With
 
 - HTML5,
