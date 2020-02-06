@@ -11,7 +11,21 @@
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://mysticcalc.herokuapp.com/)
+
+## Installation
+
+1. Clone the repository in your local folder.
+```
+git clone https://github.com/Juakata/Battleship-JS.git
+```
+2. Run
+```
+npm install
+```
+```
+npm start
+```
 
 ## Author
 
