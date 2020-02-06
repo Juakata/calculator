@@ -1,5 +1,10 @@
 import Big from 'big-js';
 
+const ExceptionCalc = mensaje => {
+  this.mensaje = mensaje;
+  this.nombre = 'ExceptionCalc';
+};
+
 const operate = (n1, n2, operation) => {
   let result = new Big(0);
   const x = new Big(n1);
@@ -17,7 +22,7 @@ const operate = (n1, n2, operation) => {
       break;
     case '÷':
       if (y === 0) {
-        return 'Math Error';
+        throw new ExceptionCalc('Math Error');
       }
       result = x.div(y);
       break;
